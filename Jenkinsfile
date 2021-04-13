@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'python:3.7.3' } }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'python3 script2.py'
+                sh 'python3 teste2.py'
             }
         }
     }
